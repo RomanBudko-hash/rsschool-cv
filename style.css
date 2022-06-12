@@ -10,7 +10,7 @@ html{
 }
 
 body{
-  background: linear-gradient(to right bottom, rgb(0, 0, 0), rgb(255, 255, 255));
+  background: linear-gradient(to right bottom, rgb(255, 255, 255), rgb(0, 0, 0));
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -22,6 +22,7 @@ ul{
   margin: 0 auto;
   width: 80%;
   padding: 25px;
+  border: 1px solid rgb(167, 1, 197);
 }
 
 h1{
@@ -51,27 +52,57 @@ a{
   color: rgb(167, 1, 197);
   font-size: 2rem;
   text-decoration: none;
+  transition: 0.9s;
 }
 
 a:visited{
   color: white;
 }
 
+a:hover{
+  outline: 1px solid rgb(0, 0, 0);
+}
+
 h2{
+  font-weight: 100;
   color: rgb(167, 1, 197);
 }
 
-.contacts, .about, .skills, .code, .experience, .english{
+main{
   margin: 0 0 25px 65px;
   font-size: 2rem;
+  line-height: 2.7rem;
 }
 
-.contacts__self-contacts{
-  line-height: 2.7rem;
-  margin: 25px 0 0 0;
+main section h2{
+  margin: 25px 0 25px 0;
 }
 
-.about__text{
-  margin: 25px 0 0 0;
-  line-height: 2.7rem;
+footer{
+  border: 1px solid rgb(167, 1, 197);
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.github{
+  display: block;
+}
+
+.year{
+  display: block;
+}
+
+.logo{
+  width: 70px;
+}
+
+@media (max-width: 768px) {
+  .code{
+    display: none;
+  }
+  main{
+    margin: 0 0 25px 0;
+  }
 }
