@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./normalize.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" type="image/x-icon" href="./favicon.ico">
+  <title>MyCV</title>
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <img src="./itsme.png" alt="my photo" class="header__photo">
+      <h1>Roman Budko</h1>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li><a href="#contacts">My contacts</a></li>
+          <li><a href="#about">About me</a></li>
+          <li><a href="#skills">My skills</a></li>
+          <li><a href="#code">Code example</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#english">English level</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="contacts" id="contacts">
+        <h2>My contacts</h2>
+        <ul class="contacts__self-contacts">
+          <li>Location: Saratov, Russia</li>
+          <li>Telegram: Roman Or maybe not Roman</li>
+          <li>Phone: 8 953 633 91 03</li>
+          <li>Email: romanjaneiro@mail.ru</li>
+          <li>GitHub: RomanBudko-hash</li>
+          <li>Discord: Bad_coder</li>
+        </ul>
+      </section>
+      <section class="about" id="about">
+        <h2>About me</h2>
+        <p class="about__text">For a long time I wanted to become a developer, but constantly something distracted me.
+          Now I realize that I
+          have all the resources to fulfill my dream. I chose the front-end because I like to immediately see the result
+          of my work, in addition, javascript is a very common language.</p>
+      </section>
+      <section class="skills" id="skills">
+        <h2>My skills</h2>
+        <ul class="skills__languages">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript(Basic)</li>
+          <li>C#(Basic)</li>
+          <li>Git(Basic)</li>
+        </ul>
+      </section>
+      <section class="code" id="code">
+        <h2>Code example</h2>
+        <pre>
+          function explode(s) {
+            const arr = s.split('')
+            const res = []
+              for(let i = 0; i &lt; arr.length; i++){
+                let x = arr[i]
+                for(x; x &gt; 0; x--){
+                  res.push(arr[i])
+              }
+            }
+            return res.join('')
+          }
+        </pre>
+      </section>
+      <section class="experience" id="experience">
+        <h2>Experience</h2>
+        <ul>
+          <li>Courses HTML Academy</li>
+          <li>.NET/WEB-разработка(incomplete) from EPAM</li>
+          <li>JS/FE Pre - School 2022 (559.9 points)</li>
+        </ul>
+      </section>
+      <section class="english" id="english">
+        <h2>English</h2>
+        <p>A2(Pre-Intermediate).</p>
+      </section>
+    </main>
+    <footer>
+      <div class="logo"><a href="https://rs.school/js/" target="_blank"><img src="./rs_school_js.svg"
+            alt="rs school logo"></a></div>
+      <span class="year">2022</span>
+      <a href="https://github.com/RomanBudko-hash" target="_blank" class="github">github</a>
+    </footer>
+  </div>
+</body>
+
+</html>
