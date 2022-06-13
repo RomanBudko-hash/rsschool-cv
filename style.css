@@ -59,8 +59,8 @@ a:visited{
   color: white;
 }
 
-a:hover{
-  outline: 1px solid rgb(0, 0, 0);
+li a:hover{
+  border-bottom: 2px solid white;
 }
 
 h2{
@@ -100,6 +100,9 @@ footer{
 
 @media (max-width: 768px) {
   .code{
+    display: none;
+  }
+  .nav__display_none{
     display: none;
   }
   main{
